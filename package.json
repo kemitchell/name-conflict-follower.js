@@ -1,0 +1,33 @@
+{
+  "name": "name-conflict-follower",
+  "description": "follow npm registry updates and respond to queries for potential name conflicts",
+  "version": "0.0.0",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "bin": "server.js",
+  "dependencies": {
+    "leven": "^2.0.0",
+    "pino": "^2.7.5",
+    "pull-npm-registry-updates": "^1.0.0",
+    "pull-stream": "^3.4.5"
+  },
+  "devDependencies": {
+    "standard": "^8.4.0"
+  },
+  "files": [
+    "index.js",
+    "server.js",
+    "pm2.json"
+  ],
+  "keywords": [
+    "conflicts",
+    "follower",
+    "names",
+    "npm",
+    "trademark"
+  ],
+  "license": "MIT",
+  "repository": "kemitchell/name-conflict-follower.js",
+  "scripts": {
+    "lint": "standard"
+  }
+}

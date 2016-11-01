@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "name-conflict-follower",
+      "script": "name-conflict-follower",
+      "watch": false,
+      "autorestart": true,
+      "node_args": "--max-old-space-size=4096",
+      "env": {
+        "LOG_LEVEL": "info",
+        "SINCE": "0"
+      }
+    }
+  ]
+}
