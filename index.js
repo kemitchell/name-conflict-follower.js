@@ -17,10 +17,9 @@ prototype.sink = function sink (log, callback) {
   return pull(
     pull.filter(isPackageUpdate),
     pull.drain(function (update) {
-      log.info({
-        name: update.doc.name
-      }, 'name')
-      self.names.add(update.doc.name)
+      var name = update.id
+      log.info({name: name}, 'name')
+      self.names.add(name)
       self.sequence = update.seq
     })
   )

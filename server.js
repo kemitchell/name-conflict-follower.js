@@ -21,7 +21,10 @@ log.info('start')
 
 var follower = new Follower(log)
 pull(
-  registry({since: SINCE}),
+  registry({
+    include_docs: false,
+    since: SINCE
+  }),
   function loggingSpy (source) {
     return function (end, callback) {
       source(end, function (end, update) {
